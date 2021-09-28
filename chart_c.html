@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.8.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-7f38d65c88d895d3d0ad577f0ad21b22"}, "mark": {"type": "bar", "cornerRadiusTopLeft": 3, "cornerRadiusTopRight": 3}, "encoding": {"color": {"type": "nominal", "field": "pangolin_lineage"}, "opacity": {"condition": {"value": 1, "selection": "selector001"}, "value": 0.2}, "x": {"type": "quantitative", "field": "count"}, "y": {"type": "nominal", "field": "country"}}, "height": 500, "selection": {"selector001": {"type": "multi", "fields": ["pangolin_lineage"], "bind": "legend"}}, "width": 800, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-7f38d65c88d895d3d0ad577f0ad21b22": [{"pangolin_lineage": "AY.30", "country": "Australia", "count": 32}, {"pangolin_lineage": "AY.4", "country": "Australia", "count": 42}, {"pangolin_lineage": "B.1.617.2", "country": "Australia", "count": 146}, {"pangolin_lineage": "AY.12", "country": "Belgium", "count": 15}, {"pangolin_lineage": "AY.4", "country": "Belgium", "count": 240}, {"pangolin_lineage": "AY.5", "country": "Belgium", "count": 39}, {"pangolin_lineage": "B.1.617.2", "country": "Belgium", "count": 379}, {"pangolin_lineage": "AY.4", "country": "Brazil", "count": 24}, {"pangolin_lineage": "B.1.617.2", "country": "Brazil", "count": 109}, {"pangolin_lineage": "P.1.7", "country": "Brazil", "count": 11}, {"pangolin_lineage": "B.1.1.7", "country": "Cambodia", "count": 29}, {"pangolin_lineage": "AY.12", "country": "Denmark", "count": 214}, {"pangolin_lineage": "AY.16", "country": "Denmark", "count": 31}, {"pangolin_lineage": "AY.20", "country": "Denmark", "count": 17}, {"pangolin_lineage": "AY.4", "country": "Denmark", "count": 1405}, {"pangolin_lineage": "AY.5", "country": "Denmark", "count": 18}, {"pangolin_lineage": "AY.7.1", "country": "Denmark", "count": 172}, {"pangolin_lineage": "AY.9", "country": "Denmark", "count": 123}, {"pangolin_lineage": "B.1.617.2", "country": "Denmark", "count": 1647}, {"pangolin_lineage": "None", "country": "France", "count": 12}, {"pangolin_lineage": "B.1.617.2", "country": "French Guiana", "count": 13}, {"pangolin_lineage": "AY.4", "country": "Germany", "count": 22}, {"pangolin_lineage": "B.1.617.2", "country": "Germany", "count": 157}, {"pangolin_lineage": "AY.12", "country": "Italy", "count": 26}, {"pangolin_lineage": "AY.26", "country": "Italy", "count": 25}, {"pangolin_lineage": "AY.32", "country": "Italy", "count": 40}, {"pangolin_lineage": "AY.4", "country": "Italy", "count": 64}, {"pangolin_lineage": "AY.5", "country": "Italy", "count": 11}, {"pangolin_lineage": "B.1.617.2", "country": "Italy", "count": 231}, {"pangolin_lineage": "AY.29", "country": "Japan", "count": 22}, {"pangolin_lineage": "AY.20", "country": "Mexico", "count": 59}, {"pangolin_lineage": "B.1.617.2", "country": "Netherlands", "count": 17}, {"pangolin_lineage": "B.1.617.2", "country": "New Zealand", "count": 247}, {"pangolin_lineage": "AY.4", "country": "Norway", "count": 30}, {"pangolin_lineage": "B.1.617.2", "country": "Norway", "count": 43}, {"pangolin_lineage": "AY.4", "country": "Romania", "count": 62}, {"pangolin_lineage": "AY.23", "country": "Singapore", "count": 458}, {"pangolin_lineage": "AY.4", "country": "Spain", "count": 29}, {"pangolin_lineage": "B.1.617.2", "country": "Spain", "count": 56}, {"pangolin_lineage": "B.1.617.2", "country": "Sweden", "count": 12}, {"pangolin_lineage": "AY.12", "country": "Switzerland", "count": 19}, {"pangolin_lineage": "AY.4", "country": "Switzerland", "count": 21}, {"pangolin_lineage": "B.1.617.2", "country": "Switzerland", "count": 32}, {"pangolin_lineage": "AY.12", "country": "Turkey", "count": 16}, {"pangolin_lineage": "B.1.617.2", "country": "Turkey", "count": 54}, {"pangolin_lineage": "AY.20", "country": "USA", "count": 23}, {"pangolin_lineage": "AY.24", "country": "USA", "count": 12}, {"pangolin_lineage": "AY.25", "country": "USA", "count": 231}, {"pangolin_lineage": "AY.26", "country": "USA", "count": 12}, {"pangolin_lineage": "AY.3", "country": "USA", "count": 230}, {"pangolin_lineage": "AY.4", "country": "USA", "count": 151}, {"pangolin_lineage": "B.1.617.2", "country": "USA", "count": 811}, {"pangolin_lineage": "AY.11", "country": "United Kingdom", "count": 14}, {"pangolin_lineage": "AY.12", "country": "United Kingdom", "count": 116}, {"pangolin_lineage": "AY.20", "country": "United Kingdom", "count": 27}, {"pangolin_lineage": "AY.23", "country": "United Kingdom", "count": 26}, {"pangolin_lineage": "AY.25", "country": "United Kingdom", "count": 35}, {"pangolin_lineage": "AY.26", "country": "United Kingdom", "count": 17}, {"pangolin_lineage": "AY.3", "country": "United Kingdom", "count": 79}, {"pangolin_lineage": "AY.4", "country": "United Kingdom", "count": 27412}, {"pangolin_lineage": "AY.5", "country": "United Kingdom", "count": 1144}, {"pangolin_lineage": "AY.6", "country": "United Kingdom", "count": 749}, {"pangolin_lineage": "AY.7", "country": "United Kingdom", "count": 158}, {"pangolin_lineage": "AY.7.2", "country": "United Kingdom", "count": 25}, {"pangolin_lineage": "AY.9", "country": "United Kingdom", "count": 290}, {"pangolin_lineage": "B.1.617.2", "country": "United Kingdom", "count": 4281}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
