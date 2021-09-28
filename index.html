@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>GoLemPharm</title>
+    <style>
+
+#topmenu {
+position: relative;
+margin: 0;
+padding: 0;
+height: 35px;
+width: 100%;
+
+}
+
+#topmenu ul {
+margin: 0 auto;
+padding: 0;
+position: absolute;
+height: 100%;
+width: 100%;
+list-style-type: none;
+background-color: #eeeeee;
+overflow: visible;
+
+}
+
+#topmenu ul > li {
+display: block;
+float: left;
+height: auto;
+/* Szerokość elementów nagłówka menu. */
+width: 160px;
+
+}
+
+#topmenu li > a {
+display: block;
+padding: 0 0 0 10px;
+height: 100%;
+width: 150px;
+/*border-right: 1px black solid;*/
+line-height: 30px;
+font-family: sans-serif;
+font-size: 18px;
+text-decoration: none;
+background-color: #eeeeee;
+color: #5d5636;
+}
+
+#topmenu ul ul {
+margin-top: 2px;
+display: none;
+position: static;
+height: auto;
+width: 160px;
+border: 1px #666666 solid;
+background-color: #dddddd;
+}
+#navigationBar ul ul li {
+position: relative;
+float: none;
+display: block;
+height: 28px;
+width: 100%;
+border: none;
+}
+
+#topmenu ul ul li > a {
+height: 100%;
+width: 96%;
+padding: 0 0 0 4%;
+line-height: 28px;
+background-color: transparent;
+border: none;
+color: #000000;
+font-size: 12px;
+font-style: normal;
+}
+#topmenu li:hover > a {
+color: #220000;
+background-color: #eeeabe;
+}
+#topmenu li:hover > ul {
+display: block;
+}
+
+#logo
+{
+  background-color: #3b5998;
+  color:white;
+  height: 70px;
+  font-size: 42px
+}
+
+ul {
+text-align: center;
+}
+
+li {
+display: inline-block;
+}
+
+footer {
+text-align: center;
+font-size: 15px
+}
+
+.posts {
+background-color: white;
+padding: 15px;
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+}
+#content {
+  float:left;
+  width:18%;
+  background-color:whitc
+  }
+ #wiecej{
+ clear:left;
+ } 
+ #contact {
+
+ clear:left;
+ } 
+
+
+</style>
+    </style>
+  </head>
+  <body>
+    <header>
+        <h1 id= "logo"; align= 'center'; >Pharm Data Analysis<span style="font-size:10px">(beta)</span></h1>
+          <nav id="topmenu">
+            <ul>
+              <li><a href='/'>Main  </a></li>
+              <li><a>Analysis </a>
+                <ul>
+                  <li><a href="http://10.5.22.161:8501">Variant counter </a></li>
+				  <li><a href="{{url_for('page2')}}">Compare variants  </a></li>
+                </ul></li>
+			 <!--<li><a href="#how">How it's work</a></li>-->
+             <!--<li><a href="/about.html">About us</a></li>-->
+             <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+      </header>
+	 <br>
+		
+		
+		
+	<article>
+		
+	<div class='posts'>
+	<h1 align= 'center'> Today variants analysis</h1>
+		<h3 align= 'center'> by date</h3>
+      <center><iframe src = "/home/piotr/Desktop/gis24/chart_waw.html" height="650px" width="1000px" ></iframe> </center>
+	  <h3 align= 'center'> by country</h3>
+	  <center><iframe src = "/home/piotr/Desktop/gis24/chart_c.html" height="600px" width="1000px" ></iframe> </center>
+	 </div>
+	 <div id='wiecej'>
+	 <!--<p align= 'center'> <a href="{{url_for('blog_analizy')}}">Więcej... </a><br /></p>-->
+	 </div>
+	</article>
+	<div id='contact'>
+	<br>
+	<hr width="70%">
+	<article>
+		<h2 id= "contact"; align= 'center';>Contact</h2>
+			<p align= 'center'>Dr n. farm. <span style="font-weight: bold;">Piotr Karabowicz </span><br/><a href="mailto:p.karabowicz@gmail.com">p.karabowicz@gmail.com</a><br /></p>
+
+	</article>
+	<br>
+	<hr width="70%">
+	<footer>
+		Copyright 2020&copy; Piotr Karabowicz
+	</footer>
+	</div>
+    <!-- <a href="{{url_for('page1')}}">page1</a> -->
+    <!--<a href=”/page1”><input type=”button” value=”call_flask_funtion”></a>-->
+        <!--<a href="{{url_for('page1')}}">page2</a>-->
+</body></html>
